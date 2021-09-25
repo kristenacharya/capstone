@@ -4,9 +4,10 @@
   "description": "lowdb sample for 1.125",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node index.js"
   },
-  "author": "abel@mit.edu",
+  "author": "kristen.acharya@icloud.com",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.21.4",
