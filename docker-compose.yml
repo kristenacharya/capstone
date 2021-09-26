@@ -1,0 +1,15 @@
+mongo:
+  image: mongo
+  ports:
+    - "27017:27017"
+  restart: always
+web:
+  build: .
+  ports:
+    - "3000:3000"
+  environment:
+      - AWS_ACCESS_KEY_ID="AKIAZFTNHOJUQV6BAZCT"
+      - AWS_SECRET_ACCESS_KEY="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"
+  links:
+    - mongo
+  command: node index.js
